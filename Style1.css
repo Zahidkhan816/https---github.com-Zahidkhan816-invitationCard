@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #fff;
+    background-color: #1e5116;
+      font-family: 'Tsukimi Rounded', sans-serif;;
+  }
+  
+  .background {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(64, 0, 0, 0.9),
+        rgba(244, 109, 117, 0.6)
+      ),
+      url(./image/img1.wallspic.com-vector_graphics-paper-monochrome-pattern-monochrome_mode-3840x2400.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .top-bar {
+    height: 3rem;
+    width: 90vw;
+    word-spacing: 0.1rem;
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .names {
+    height: 16.25rem;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .names img {
+    width: 25rem;
+    height: 15.625rem;
+  }
+  
+  .animation {
+    height: 17.5rem;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .groom-cartoon {
+    height: 17.5rem;
+    width: 6.25rem;
+    margin-left: 0.625rem;
+    animation-name: moveInleft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes moveInleft {
+    0% {
+      opacity: 0;
+      transform: translateX(-3.125rem);
+    }
+    80% {
+      transform: translateX(25rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  .bridel-cartoon {
+    height: 17.5rem;
+    width: 8.75rem;
+    margin-left: 9.375rem;
+    animation-name: moveInright;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes moveInright {
+    0% {
+      opacity: 0;
+      transform: translateX(1.5625rem);
+    }
+    80% {
+      transform: translateX(-25rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  .card-btn {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  a.button {
+    width: 9rem;
+    height: 3.125rem;
+    text-decoration: none;
+    background: #4e9caf;
+    padding: 0.3125rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    color: white;
+    line-height: 2.1875rem;
+  }
+  
+  /* mehndi-function */
+  
+  .mehndi-backgrounud {
+    background-image: linear-gradient(
+        to left top,
+        rgba(64, 2, 0, 0.363),
+        rgba(248, 232, 108, 0.6)
+      ),
+      url(./image/wallpaper2you_319128.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  /* sangeet function */
+  
+  .sangeet-background {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 64, 64, 0.863),
+        rgba(255, 183, 0, 0.6)
+      ),
+      url(./image/wallpaper2you_319128.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  /* wedding function */
+  
+  .wedding-background {
+    background-image: linear-gradient(
+        to left top,
+        rgba(64, 0, 0, 0.678),
+        rgba(255, 208, 0, 0.678)
+      ),
+      url(./image/wallpaper2you_319128.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  /* media queries for responsive design */
+  
+  @media screen and (max-width: 600px) {
+    .top-bar {
+      font-size: 1rem;
+    }
+  
+    .names img {
+      width: 15rem;
+      height: 10.625rem;
+    }
+  
+    .animation {
+      height: 15.625rem;
+    }
+  
+    .groom-cartoon {
+      height: 15.625rem;
+      width: 5rem;
+      margin-left: 0.3125rem;
+    }
+  
+    .bridel-cartoon {
+      height: 15.625rem;
+      width: 7.5rem;
+      margin-left: 6.25rem;
+    }
+  
+    a.button {
+      width: 7.5rem;
+      height: 2.5rem;
+      line-height: 1.875rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .top-bar {
+      font-size: 1.2rem;
+    }
+  
+    .names img {
+      width: 20rem;
+      height: 12.5rem;
+    }
+  
+    .animation {
+      height: 14.375rem;
+    }
+  
+    .groom-cartoon {
+      height: 14.375rem;
+      width: 5.625rem;
+      margin-left: 0.625rem;
+    }
+  
+    .bridel-cartoon {
+      height: 14.375rem;
+      width: 8.125rem;
+      margin-left: 7.5rem;
+    }
+  
+    a.button {
+      width: 8.125rem;
+      height: 2.8125rem;
+      line-height: 2.1875rem;
+      font-size: 1rem;
+    }
+  }
+  
+
+
+  /* below 360px screen */
+  @media screen and (max-width: 360px) {
+    .top-bar {
+      font-size: 0.9rem;
+    }
+  
+    .names img {
+      width: 12rem;
+      height: 7.5rem;
+    }
+  
+    .animation {
+      height: 10.625rem;
+    }
+  
+    .groom-cartoon {
+      height: 10.625rem;
+      width: 3.75rem;
+      margin-left: 0.3125rem;
+    }
+  
+    .bridel-cartoon {
+      height: 10.625rem;
+      width: 5.625rem;
+      margin-left: 5rem;
+    }
+  
+    a.button {
+      width: 6.25rem;
+      height: 2.1875rem;
+      line-height: 1.5625rem;
+      font-size: 0.75rem;
+    }
+  }
+  
